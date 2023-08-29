@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #1c3e5c;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 320px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  color:cadetblue;
+}
+
+input[type="text"] {
+  width: 93%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #4caf50;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(135, 181, 187);
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+button.deleteTask {
+  background-color: #f44336;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.task-title {
+  flex-grow: 1;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+}
+
+button.editTask {
+  background-color: #7c7ef1;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.editTask:hover {
+  background-color: #f77949;
+}
